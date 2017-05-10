@@ -1,5 +1,5 @@
 # Personal-Website
-My Portfolio Website that I made using HTML/CSS/JAVASCRIPT.
+My Portfolio Website.
 
 Feel free to add changes.
 
