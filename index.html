@@ -1,0 +1,599 @@
+<!-- my black and white site index -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="uts-8" />
+    <title>Ankit Kumar Pandit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="switch/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato|Ubuntu|Open+Sans|Tangerine|Junction|Roboto|Oswald|Titillium+Web" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="dist/typewrite.js"></script>
+
+</head>
+
+
+<body>
+    <div class="pseudo-image">
+        <img src="images/snow-mountain-2-black.png">
+        <img src="images/snow-mountain-2.png">
+        <img src="images/snow-mountain-black.png">
+        <img src="images/snow-mountain.png">
+        <video   src="loop.mp4"></video>
+
+    </div>
+    <audio id="bgm" loop="loop"><source src="audio/bgm-3.mp3" type="audio/mpeg"></audio>
+    <audio id="onhover" preload="auto">
+				<source src="audio/hover-2.mp3" >
+			</audio>
+    <audio id="onhover-2" preload="auto">
+				<source src="audio/hover-4.mp3" >
+			</audio>
+    <div class="loader" id="load_screen">
+        <p class="chrome">BEST EXPERIENCED IN CHROME</p>
+        <div id="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <canvas style="display:block" id="canvas"></canvas>
+    <div class="container" onmouseover="getPos(event)">
+
+        <div title="Light Switch" class="switch-parent">
+            <input type="checkbox" name="switch" id="switch">
+            <label class="switch" for="switch"></label>
+        </div>
+        <div class="light-ray"></div>
+        <div class="bulb light">
+            <img src="images/light-bulb.png">
+        </div>
+        <div class="bulb dark">
+            <img src="images/dark-bulb.png">
+        </div>
+        <div class="mobile-title">
+            <h1><img src="images/logo-light.png">Ankit Kumar Pandit</h1>
+        </div>
+        <div class="toggle">
+            <a href="#" class="nav-toggle-btn"><img src="images/toggle.png"></img>
+            </a>
+        </div>
+        <div class="menu">
+            <div class="title">
+                <h1>ANKIT KUMAR PANDIT</h1>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a class="nav-list-item" onclick="PlaySound()" href="#"> About </a></li>
+                        <li><a onclick="PlaySound()" href="projects/index.html"> Projects</a></li>
+                        <li><a onclick="PlaySound()" href="resume/index.html"> Resume </a></li>
+                        <li><a onclick="PlaySound()" href="blog/index.html"> Blog </a></li>
+                        <li><a onclick="PlaySound()" href="contact/index.html"> Contact</a></li>
+                        <li style="border-top: 1px solid #ccc"><a class="color-changer nav-list-item" onclick="PlaySound()" href="#">Lights</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="social">
+                <a target="_blank"><img class="fb" src="images/fb-black.png"></img>
+                </a>
+                <a href="https://plus.google.com/+AnkitKumarSpanion" target="_blank"><img class="gp" src="images/gp-black.png"></img>
+                </a>
+                <a href="https://github.com/AKAspanion" target="_blank"><img class="gh" src="images/gh-black.png"></img>
+                </a>
+                <a href="https://www.linkedin.com/in/spanion/" target="_blank"><img class="gi" src="images/li-black.png"></img>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&#169;Ankit Kumar, 2017</p>
+            </div>
+        </div>
+        <div class="menu2">
+            <div class="title">
+                <h1>ANKIT KUMAR PANDIT</h1>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a class="nav-list-item" onclick="PlaySound()" href="#"> About </a></li>
+                        <li><a onclick="PlaySound()" href="projects/index.html"> Projects</a></li>
+                        <li><a onclick="PlaySound()" href="resume/index.html"> Resume </a></li>
+                        <li><a onclick="PlaySound()" href="blog/index.html"> Blog </a></li>
+                        <li><a onclick="PlaySound()" href="contact/index.html"> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/AKAspanion" target="_blank"><img class="fb" src="images/fb-black.png"></img>
+                </a>
+                <a href="https://plus.google.com/+AnkitKumarSpanion" target="_blank"><img class="gp" src="images/gp-black.png"></img>
+                </a>
+                <a href="https://github.com/AKAspanion" target="_blank"><img class="gh" src="images/gh-black.png"></img>
+                </a>
+                <a href="https://www.linkedin.com/in/spanion/" target="_blank"><img class="gi" src="images/li-black.png"></img>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&#169;Ankit Kumar, 2017</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="profile">
+                <div class="pulse">
+                    <div class="pulse2">
+                    </div>
+                </div>
+                <div class="profile-img">
+
+                </div>
+            </div>
+            <div class="about">
+                <div id="typewriteText"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="dist/typewrite.min.js"></script>
+    <script>
+        function load() {
+
+            $("#bars").css("transform", "rotate(-90deg)");
+            setTimeout(function() {
+                $(".loader").css("transform", "translate(95vw, 0)");
+            }, 500);
+
+            setTimeout(function() {
+                $(".menu2").css("transform", "translate3d(0, 0, 0)");
+                $(".loader").css("transform", "translate(-100vw, 0)");
+                $(".content").css("transform", "translate(0, 0)");
+                $(".chrome").css("display", "none");
+            }, 1000);
+
+            setTimeout(function() {
+                if ($(window).width() <= 640) {
+                    $(".toggle").css("transform", "translate3d(0, 0, 0)");
+                    $(".mobile-title").css("transform", "translate3d(0, 0, 0)");
+                }
+                $(".switch-parent").css("transform", "translate3d(0, 0, 0)");
+                $(".switch-parent").css("transform", "rotate(180deg)");
+                $(".bulb").css("transform", "translate3d(0, 0, 0)");
+                $("#canvas").css("visibility", "visible");
+                load_screen.style.display = "none";
+                document.getElementById("bgm").play()
+            }, 1500);
+        }
+        
+        window.addEventListener("load", function() {
+            
+            var load_screen = document.getElementById("load_screen");
+            
+            load();
+            
+            setTimeout(function() {
+                $('#typewriteText').typewrite({
+                    actions: [{
+                            speed: 14
+                        },
+                        {
+                            delay: 400
+                        },
+                        {
+                            type: 'Hey there!'
+                        },
+                        {
+                            delay: 500
+                        },
+                        {
+                            select: {
+                                from: 0,
+                                to: 10
+                            }
+                        },
+                        {
+                            delay: 200
+                        },
+                        {
+                            remove: {
+                                num: 10,
+                                type: 'whole'
+                            }
+                        },
+                        {
+                            type: 'My mane'
+                        },
+                        {
+                            delay: 1500
+                        },
+                        {
+                            select: {
+                                from: 3,
+                                to: 7
+                            }
+                        },
+                        {
+                            delay: 700
+                        },
+                        {
+                            remove: {
+                                num: 4,
+                                type: 'whole'
+                            }
+                        },
+                        {
+                            delay: 300
+                        },
+                        {
+                            type: 'name is Ankit Kumar Pandit. '
+                        },
+                        {
+                            delay: 500
+                        },
+                        {
+                            speed: 18
+                        },
+                        {
+                            type: '<br>'
+                        },
+                        {
+                            type: 'Currently pursuing B.Tech in Computer Science and Engineering at Bengal Institute of Technology, Kolkata.'
+                        },
+                        {
+                            delay: 500
+                        },
+                        {
+                            speed: 30
+                        },
+                        {
+                            select: {
+                                from: 33,
+                                to: 138
+                            }
+                        },
+                        {
+                            speed: 18
+                        },
+                        {
+                            remove: {
+                                num: 105,
+                                type: 'whole'
+                            }
+                        },
+                        {
+                            delay: 500
+                        },
+                        {
+                            type: 'A gamer, novice coder and tech enthusiast.'
+                        },
+                        {
+                            delay: 500
+                        },
+                        {
+                            speed: 25
+                        },
+                        {
+                            select: {
+                                from: 33,
+                                to: 76
+                            }
+                        },
+                        {
+                            remove: {
+                                num: 42,
+                                type: 'whole'
+                            }
+                        },
+                        {
+                            delay: 300
+                        },
+                        {
+                            type: 'Welcome to my website!'
+                        },
+                    ]
+
+                });
+            }, 2000);
+        });
+    </script>
+    <script>
+        //sound on hover
+        $(".navigation a")
+            .each(function(i) {
+                if (i != 0) {
+                    $("#onhover")
+                        .clone()
+                        .attr("id", "onhover" + i)
+                        .appendTo($(this).parent());
+                }
+                $(this).data("beeper", i);
+            })
+            .mouseenter(function() {
+                $("#onhover" + $(this).data("beeper"))[0].play();
+            });
+        $("#onhover").attr("id", "onhover0");
+
+        $(".social img")
+            .each(function(i) {
+                if (i != 0) {
+                    $("#onhover-2")
+                        .clone()
+                        .attr("id", "onhover-2" + i)
+                        .appendTo($(this).parent());
+                }
+                $(this).data("beeper", i);
+            })
+            .mouseenter(function() {
+                $("#onhover-2" + $(this).data("beeper"))[0].play();
+            });
+        $("#onhover-2").attr("id", "onhover-20");
+    </script>
+    <script>
+        var canvasColor = "#333";
+        var on = 1;
+        
+        function lights_on(){
+            if (on == 1) {
+
+                on = 0;
+                canvasColor = "#fff";
+                $(".title").addClass("gradient-text");
+                $(".pulse").css("filter", "invert(100%)");
+                $(".pulse2").css("filter", "invert(100%)");
+                $(".bulb").css("filter", "drop-shadow(0 0 10px yellow)");
+                $(".dark").css("display", "block");
+                $(".light").css("display", "none");
+
+                $(".social").css("filter", "grayscale(0%)");
+                $(".profile-img").css("filter", "grayscale(0%)");
+                $("#type").css("color", "#55bbf4");
+                $("#typewriteText").css("box-shadow", "inset 0px 0px 5px black");
+                $("body").css("background-image", "url(images/snow-mountain-2.png)");
+                $(".light-ray").addClass("splash");
+                $(".light-ray").removeClass("splash-2");
+
+            } else {
+                on = 1;
+                canvasColor = "#333";
+                $(".title").removeClass("gradient-text");
+                $(".pulse").css("filter", "invert(0%)");
+                $(".pulse2").css("filter", "invert(0%)");
+                $(".bulb").css("filter", "drop-shadow(0 0 0 transparent)");
+                $(".title h1").css("color", "#333333");
+                $(".social").css("filter", "grayscale(100%)");
+                $(".profile-img").css("filter", "grayscale(100%)");
+                $("#typewriteText").css("color", "#fff");
+                $("#typewriteText").css("box-shadow", "inset 0px 0px 0px black");
+                $(".dark").css("display", "none");
+                $(".light").css("display", "block");
+                $("body").css("background-image", "url(images/snow-mountain-2-black.png)");
+                $(".light-ray").addClass("splash-2");
+                $(".light-ray").removeClass("splash");
+            }
+        }
+        var wide = window.outerWidth
+        if(on==1 && wide>640){
+            setTimeout(function(e){
+                lights_on();
+            },28000);
+        }
+        
+        $("#switch").on('click', function(e) {
+
+            lights_on();
+
+        });
+
+
+
+        var flag = 1;
+        $(".color-changer").on('click', function(e) {
+
+            if (flag == 1) {
+                flag = 0;
+                canvasColor = "#fff";
+                $(".title").addClass("gradient-text");
+                $(".light-ray").addClass("splash");
+                $(".light-ray").removeClass("splash-2");
+                $(".menu").css("background", "#55BBF4");
+                $(".menu2").css("background", "#55BBF4");
+                $(".pulse").css("filter", "invert(100%)");
+                $(".pulse2").css("filter", "invert(100%)");
+                $("body").css("background-image", "url(images/snow-mountain-2.png)");
+                $(".mobile-title").addClass("gradient-text");
+                $(".social").css("filter", "grayscale(0%)");
+                $(".profile-img").css("filter", "grayscale(0%)");
+                $(".mobile-title img").css("filter", "grayscale(0%)");
+                $("#typewriteText").css("box-shadow", "inset 0px 0px 5px black");
+            } else {
+                flag = 1;
+                canvasColor = "#333";
+                $(".title").removeClass("gradient-text");
+                $(".light-ray").addClass("splash-2");
+                $(".light-ray").removeClass("splash");
+                $(".menu").css("background", "#bfbfbf");
+                $(".menu2").css("background", "#bfbfbf");
+                $(".pulse").css("filter", "invert(0%)");
+                $(".pulse2").css("filter", "invert(0%)");
+                $("body").css("background-image", "url(images/snow-mountain-2-black.png)");
+                $(".mobile-title").removeClass("gradient-text");
+                $(".social").css("filter", "grayscale(100%)");
+                $(".profile-img").css("filter", "grayscale(100%)");
+                $(".mobile-title img").css("filter", "grayscale(100%)");
+                $("#typewriteText").css("box-shadow", "inset 0px 0px 0px black");
+            }
+
+
+        });
+
+        var t = 1;
+        (function() {
+            var bodyEl = $('body'),
+                navToggleBtn = bodyEl.find('.nav-toggle-btn'),
+                navi = bodyEl.find('.menu'),
+                navListBtn = bodyEl.find('.nav-list-item');
+
+            navToggleBtn.on('click', function(e) {
+                navi.toggleClass('active-nav');
+                if (t == 1) {
+                    t = 0;
+
+                    $('.content').css({
+                        'opacity': '.5'
+                    });
+                    $('.toggle').css({
+                        'transform': 'rotate(90deg)'
+                    });
+                } else {
+                    t = 1;
+
+                    $('.content').css({
+                        'opacity': '1'
+                    });
+
+                    $('.toggle').css({
+                        'transform': 'rotate(0deg)'
+                    });
+                }
+
+                e.preventDefault();
+            });
+            navListBtn.on('click', function(e) {
+                navi.toggleClass('active-nav');
+                if (t == 0) {
+                    t = 1;
+
+                    $('.content').css({
+                        'opacity': '1'
+                    });
+                    $('.toggle').css({
+                        'transform': 'rotate(0deg)'
+                    });
+                }
+                e.preventDefault();
+            });
+        })();
+
+        jQuery(window).scroll(function() {
+            jQuery(".menu").removeClass("active-nav");
+            if (t == 0) {
+                t = 1;
+
+                $('.content').css({
+                    'opacity': '1'
+                });
+                $('.toggle').css({
+                    'transform': 'rotate(0deg)'
+                });
+            }
+        });
+
+
+        window.onload = function() {
+            //canvas init
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+
+            //canvas dimensions
+            var W = window.outerWidth;
+            var H = window.outerHeight;
+            canvas.width = W;
+            canvas.height = H;
+
+            //snowflake particles
+            var mp = 30; //max particles
+            var particles = [];
+            for (var i = 0; i < mp; i++) {
+                particles.push({
+                    x: Math.random() * W, //x-coordinate
+                    y: Math.random() * H, //y-coordinate
+                    r: Math.random() * 2 + 1, //radius
+                    d: Math.random() * mp //density
+                })
+            }
+
+            //Lets draw the flakes
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+
+                ctx.fillStyle = canvasColor;
+                ctx.beginPath();
+                for (var i = 0; i < mp; i++) {
+                    var p = particles[i];
+                    ctx.moveTo(p.x, p.y);
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+                }
+                ctx.fill();
+                update();
+            }
+
+            //Function to move the snowflakes
+            //angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+            var angle = 0;
+
+            function update() {
+                angle += 0.01;
+                for (var i = 0; i < mp; i++) {
+                    var p = particles[i];
+                    //Updating X and Y coordinates
+                    //We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+                    //Every particle has its own density which can be used to make the downward movement different for each flake
+                    //Lets make it more random by adding in the radius
+                    p.y += Math.cos(angle + p.d) + 1 + p.r / 2;
+                    p.x += Math.sin(angle) * 2;
+
+                    //Sending flakes back from the top when it exits
+                    //Lets make it a bit more organic and let flakes enter from the left and right also.
+                    if (p.x > W + 5 || p.x < -5 || p.y > H) {
+                        if (i % 3 > 0) //66.67% of the flakes
+                        {
+                            particles[i] = {
+                                x: Math.random() * W,
+                                y: -10,
+                                r: p.r,
+                                d: p.d
+                            };
+                        } else {
+                            //If the flake is exitting from the right
+                            if (Math.sin(angle) > 0) {
+                                //Enter from the left
+                                particles[i] = {
+                                    x: -5,
+                                    y: Math.random() * H,
+                                    r: p.r,
+                                    d: p.d
+                                };
+                            } else {
+                                //Enter from the right
+                                particles[i] = {
+                                    x: W + 5,
+                                    y: Math.random() * H,
+                                    r: p.r,
+                                    d: p.d
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+
+            //animation loop
+            setInterval(draw, 33);
+        }
+    </script>
+</body>
+
+</html>

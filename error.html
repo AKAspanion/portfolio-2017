@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="uts-8"/>
+		<title>OOPS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel ="shortcut icon" href="images/favicon.ico" type="image/ico">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato|Ubuntu|Open+Sans|Tangerine|Junction|Roboto|Oswald|Titillium+Web" 
+	<head>
+	<style>
+        @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+		*{
+			margin: 0;
+			padding: 0;
+			transition: all .5s ease;
+			font-family: 'Roboto';   
+		}
+		body{
+			overflow: hidden;
+		}
+		video{
+			position:absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+		}
+		.text{
+			z-index: 2;
+            text-transform: uppercase;
+            font-weight: bold;
+			position: absolute;
+            font-family: 'Work Sans';
+			top: 45%;
+			color: #fff;
+			font-size: 300%;
+			width: 100%;
+			margin: auto;
+			text-align: center;
+            text-shadow: 1px 1px 0 #333,
+               2px 2px 0 rgba(3, 3, 3, 0.95),
+               3px 3px 0 rgba(3, 3, 3, 0.9),
+               4px 4px 0 rgba(3, 3, 3, 0.85),
+               5px 5px 0 rgba(3, 3, 3, 0.8);
+		}
+		.back{
+			top: 80%;
+			text-shadow: 0 0 0 black;;
+		}
+		.back a{
+            font-family: 'Work Sans';
+			font-size: 60%;
+			text-decoration: none;
+			padding: 5px 20px;
+			color: #333;
+			background: #bfbfbf;
+            border: 1px solid #333;
+		}
+		.back a:hover{
+			box-shadow: inset -250px 0px 0px #333;
+			color: #fff;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<video id="video" autoplay muted loop>
+				<source src="loop.mp4" type="video/mp4">
+			</video>
+			<div class="text">Hey! This is not the page you are looking for!<br>404</div>
+			<div class="text back"><a href="http://www.spanion.xyz/">< Go Back</a></div>
+		</div>
+	</body>
+</html>
