@@ -1,0 +1,509 @@
+<!-- my black and white resume index -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="uts-8" />
+    <title>Ankit Kumar Pandit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../switch/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato|Ubuntu|Open+Sans|Tangerine|Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <head>
+
+        <body>
+            <audio id="bgm" loop="loop"><source src="../audio/bgm-3.mp3" type="audio/mpeg"></audio>
+            <audio id="onhover"  preload="auto">
+				<source src="../audio/hover-2.mp3" >
+			</audio>
+            <audio id="onhover-2"  preload="auto">
+				<source src="../audio/hover-4.mp3" >
+			</audio>
+            <div class="loader" id="load_screen">
+                <div id="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div title="Light Switch" class="switch-parent">
+                <input type="checkbox" name="switch" id="switch">
+                <label class="switch" for="switch"></label>
+            </div>
+            <div class="light-ray"></div>
+            <div class="bulb light">
+                <img src="../images/light-bulb.png">
+            </div>
+            <div class="bulb dark">
+                <img src="../images/dark-bulb.png">
+            </div>
+            <div class="mobile-title">
+                <h1><img src="../images/logo-square.png">Ankit Kumar Pandit</h1>
+            </div>
+            <div class="toggle">
+                <a href="#" class="nav-toggle-btn"><img src="../images/toggle.png"></img>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="title">
+                    <h1>ANKIT KUMAR PANDIT</h1>
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li><a onclick="PlaySound()" href="../index.html"> About </a></li>
+                            <li><a onclick="PlaySound()" href="../projects/index.html"> Projects</a></li>
+                            <li><a class="nav-list-item" onclick="PlaySound()" href="#"> Resume </a></li>
+                            <li><a onclick="PlaySound()" href="../blog/index.html"> Blog </a></li>
+                            <li><a onclick="PlaySound()" href="../contact/index.html"> Contact</a></li>
+                            <li style="border-top: 1px solid #333;"><a class="color-changer nav-list-item" onclick="PlaySound()" href="#">Lights</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/AKAspanion" target="_blank"><img class="fb" src="../images/fb-black.png"></img>
+                    </a>
+                    <a href="https://plus.google.com/+AnkitKumarSpanion" target="_blank"><img class="gp" src="../images/gp-black.png"></img>
+                    </a>
+                    <a href="https://github.com/AKAspanion" target="_blank"><img class="gh" src="../images/gh-black.png"></img>
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p><b>&#169;Ankit Kumar, 2017</p>
+			</div>
+		</div>
+		<div class="menu2">
+			<div class="title">
+				<h1>ANKIT KUMAR PANDIT</h1>
+			</div>
+			<div class="navigation">
+				<nav>
+					<ul>						
+						<li ><a onclick="PlaySound()" href="../index.html"> About </a></li>
+						<li ><a onclick="PlaySound()" href="../projects/index.html"> Projects</a></li>
+						<li ><a class="nav-list-item"onclick="PlaySound()" href="#"> Resume </a></li>
+						<li ><a onclick="PlaySound()" href="../blog/index.html"> Blog </a></li>
+						<li ><a onclick="PlaySound()" href="../contact/index.html"> Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="social">
+				<a href="https://www.facebook.com/AKAspanion" target="_blank"><img class="fb" src="../images/fb-black.png"></img></a>
+				<a href="https://plus.google.com/+AnkitKumarSpanion" target="_blank"><img class="gp" src="../images/gp-black.png"></img></a>
+				<a href="https://github.com/AKAspanion" target="_blank"><img class="gh" src="../images/gh-black.png"></img></a>
+			</div>
+			<div class="copyright">
+				<p><b>&#169;Ankit Kumar, 2017</p>
+			</div>
+		</div>
+		<div class="container">
+			
+			
+			<canvas style="display:block" id="canvas"></canvas>
+			<div class="content">
+				<div class="info">
+					<h1>Resume<h1>
+					<p>My Qualification.</p>
+				</div>
+				<div class="resume">
+					<table class="t01">
+					  <tr>
+						<th>Qualification</th>	
+						<th>Universiy</th>
+						<th>Year</th> 
+					  </tr>
+					  <tr>
+						<td>B.Tech (Computer Science Engineering)</td>
+						<td>Bengal Instute of Technology, Kolkata</td> 
+						<td>2014 - ...</td>
+					  </tr>
+					  <tr>
+						<td>Intermediate</td>
+						<td>Shree Bharati, Kolkata</td> 
+						<td>2010 - 2012</td>
+					  </tr>
+					  <tr>
+						<td>High School</td>
+						<td>El-Bethel School, Kolkata</td> 
+						<td>2008 - 2010</td>
+					  </tr>
+					</table>
+					<table class="t01">
+					  <tr>
+						<th>IT Proficiency</th>	
+						<th>Details</th>
+					  </tr>
+					  <tr>
+						<td>Language</td>
+						<td>C, C++, JAVA, SQL</td>
+					  </tr>
+					  <tr>
+						<td>Graphic</td>
+						<td>HTML, CSS, JavaScript, JQuery</td> 
+					  </tr>
+					  <tr>
+						<td>Application</td>
+						<td>Android Application, Visual Basic</td> 
+					  </tr>
+					</table>
+					<div class="btn">
+					<a class="button" href="../docs/cv.pdf">View Full Resume</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script>
+            
+			
+			
+            var on=1; 
+			
+			$("#switch").on('click',function(e){
+				
+				if(on==1){
+				
+					on=0;
+					$(".light-ray").addClass("splash");	
+					$("body").css("overflow", "hidden");
+				
+				
+					$("body").css("background", "radial-gradient(circle at 100% 110%, #e8b61c 10%, #ff0040 50%)");				
+					$(".menu").css("background", "#55BBF4");
+					$(".menu2").css("background", "#55BBF4");
+					$(".pulse").css("filter", "invert(100%)");
+					$(".pulse2").css("filter", "invert(100%)");
+					$("#canvas").css("filter", "invert(100%)");
+					$(".about").css("color", "#fff");
+					$("th").css("background", "#17af23");
+					$("table.t01 tr:nth-child(even)").css("color", "#333");
+					$("table.t01 tr:nth-child(even)").css("background", "#55BBF4");
+					$("table.t01 tr:nth-child(odd)").css("color", "#333");
+					$("table.t01 tr:nth-child(odd)").css("background", "#e8b61c");
+					$(".bulb").css("filter", "drop-shadow(0 0 10px yellow)");
+					
+					$(".social").css("filter", "grayscale(0%)");
+					$(".dark").css("display", "block");
+					$(".light").css("display", "none");
+					$(".title").addClass("gradient-text");
+				}
+				else{
+					on=1;
+					$(".light-ray").removeClass("splash");
+					$("body").css("overflow", "auto");
+					
+					
+					$("body").css("background", "#bfbfbf");				
+					$(".menu").css("background", "#bfbfbf");
+					$(".menu2").css("background", "#bfbfbf");
+					$(".pulse").css("filter", "invert(0%)");
+					$(".pulse2").css("filter", "invert(0%)");
+					$("#canvas").css("filter", "invert(0%)");
+					$(".about").css("color", "#333");
+					$("th").css("background", "#333");
+					$("table.t01 tr:nth-child(even)").css("color", "#333");
+					$("table.t01 tr:nth-child(even)").css("background", "#bfbfbf");
+					$("table.t01 tr:nth-child(odd)").css("color", "#bfbfbf");
+					$("table.t01 tr:nth-child(odd)").css("background", "#333");
+					$(".bulb").css("filter", "drop-shadow(0 0 10px transparent)");
+					$(".social").css("filter", "grayscale(100%)");
+					$(".dark").css("display", "none");
+					$(".light").css("display", "block");
+					$(".title").removeClass("gradient-text");
+				}
+			});
+            
+			var flag=1;
+			$(".color-changer").on('click',function(e){
+				
+                if(flag==1){
+                    flag=0;
+					
+					
+					$(".mobile-title").addClass("gradient-text");
+					$(".light-ray").addClass("splash");	
+					
+                    $("body").css("background", "radial-gradient(circle at 100% 110%, #e8b61c 10%, #ff0040 50%)");				
+                    $(".menu").css("background", "#55BBF4");
+                    $(".menu2").css("background", "#55BBF4");
+                    $(".pulse").css("filter", "invert(100%)");
+                    $(".pulse2").css("filter", "invert(100%)");
+                    $("#canvas").css("filter", "invert(100%)");
+                    $(".about").css("color", "#fff");
+                    $("th").css("background", "#17af23");
+                    $("table.t01 tr:nth-child(even)").css("color", "#333");
+                    $("table.t01 tr:nth-child(even)").css("background", "#55BBF4");
+                    $("table.t01 tr:nth-child(odd)").css("color", "#333");
+                    $("table.t01 tr:nth-child(odd)").css("background", "#e8b61c");
+					$(".social").css("filter", "grayscale(0%)");
+                        $(".mobile-title img").css("filter", "grayscale(0%)");
+                }
+                else{
+                    flag=1;
+					$(".light-ray").removeClass("splash");
+					
+					$(".mobile-title").removeClass("gradient-text");
+					
+                    $("body").css("background", "#bfbfbf");	
+                    $(".menu").css("background", "#bfbfbf");
+                    $(".menu2").css("background", "#bfbfbf");
+                    $(".pulse").css("filter", "invert(0%)");
+                    $(".pulse2").css("filter", "invert(0%)");
+                    $("#canvas").css("filter", "invert(0%)");
+                    $(".about").css("color", "#333");
+                    $("th").css("background", "#333");
+                    $("table.t01 tr:nth-child(even)").css("color", "#333");
+                    $("table.t01 tr:nth-child(even)").css("background", "#fff");
+                    $("table.t01 tr:nth-child(odd)").css("color", "#fff");
+                    $("table.t01 tr:nth-child(odd)").css("background", "#333");
+					$(".social").css("filter", "grayscale(100%)");
+                        $(".mobile-title img").css("filter", "grayscale(100%)");
+                }
+				
+
+			});
+			
+		</script>  
+        <script>
+			window.addEventListener("load", function(){
+				var load_screen = document.getElementById("load_screen");
+				document.getElementById("load_screen");
+				$("#bars").css("transform","rotate(-90deg)");
+					
+					
+					setTimeout(function(){
+						$(".loader").css("transform","translate(95vw, 0)");
+					},500);
+					
+					setTimeout(function(){
+						$(".container").css("transform","translate(0, 0)");
+						$(".menu2").css("transform","translate3d(0, 0, 0)");
+						$(".loader").css("transform","translate(-100vw, 0)");
+					},1000);
+					
+					setTimeout(function(){
+						if($(window).width()  <= 640){
+							$(".toggle").css("transform","translate3d(0, 0, 0)");
+							$(".mobile-title").css("transform","translate3d(0, 0, 0)");
+						}
+						$(".switch-parent").css("transform","translate3d(0, 0, 0)");
+						$(".switch-parent").css("transform","rotate(180deg)");
+						$(".bulb").css("transform","translate3d(0, 0, 0)");
+                        $("#canvas").css("visibility", "visible");
+						load_screen.style.display = "none";
+                        document.getElementById("bgm").play()
+					},1500);
+			})
+		</script>
+                 <script>
+                //sound on hover
+                $(".navigation a")
+                  .each(function(i) {
+                    if (i != 0) { 
+                      $("#onhover")
+                        .clone()
+                        .attr("id", "onhover" + i)
+                        .appendTo($(this).parent()); 
+                    }
+                    $(this).data("beeper", i);
+                  })
+                  .mouseenter(function() {
+                    $("#onhover" + $(this).data("beeper"))[0].play();
+                  });
+                $("#onhover").attr("id", "onhover0");
+                
+                $(".social img")
+                  .each(function(i) {
+                    if (i != 0) { 
+                      $("#onhover-2")
+                        .clone()
+                        .attr("id", "onhover-2" + i)
+                        .appendTo($(this).parent()); 
+                    }
+                    $(this).data("beeper", i);
+                  })
+                  .mouseenter(function() {
+                    $("#onhover-2" + $(this).data("beeper"))[0].play();
+                  });
+                $("#onhover-2").attr("id", "onhover-20");
+                
+            </script>
+		<script >
+			
+			var t=1;
+			(function() {
+				var bodyEl = $('body'),
+					navToggleBtn = bodyEl.find('.nav-toggle-btn'),
+					navi = bodyEl.find('.menu'),
+					navListBtn = bodyEl.find('.nav-list-item');
+				
+				navToggleBtn.on('click', function(e) {
+					navi.toggleClass('active-nav');
+					if(t==1){
+						t=0;
+						<!-- $('.container').css({ -->
+							<!-- 'transform' : 'translate3d(250px,0,0)' -->
+						<!-- }); -->
+						$('.container').css({
+							'opacity' : '.5'
+						});
+						$('.toggle').css({
+							'transform' : 'rotate(90deg)'
+						});
+					}else{
+						t=1;
+						<!-- $('.container').css({ -->
+							<!-- 'transform' : 'translate3d(0,0,0)' -->
+						<!-- }); -->
+						$('.container').css({
+							'opacity' : '1'
+						});
+						
+						$('.toggle').css({
+							'transform' : 'rotate(0deg)'
+						});
+					}
+
+					e.preventDefault();
+				});
+				navListBtn.on('click', function(e) {
+					navi.toggleClass('active-nav');
+					if(t==0){
+						t=1;
+						<!-- $('.container').css({ -->
+							<!-- 'transform' : 'translate3d(0,0,0)' -->
+						<!-- }); -->
+						$('.container').css({
+							'opacity' : '1'
+						});
+						$('.toggle').css({
+							'transform' : 'rotate(0deg)'
+						});
+					}
+					e.preventDefault();
+				});
+			})(); 
+			
+			jQuery(window).scroll(function() {
+				jQuery(".menu").removeClass("active-nav");
+				if(t==0){
+					t=1;
+					<!-- $('.container').css({ -->
+						<!-- 'transform' : 'translate3d(0,0,0)' -->
+					<!-- }); -->
+					$('.container').css({
+						'opacity' : '1'
+					});
+					$('.toggle').css({
+						'transform' : 'rotate(0deg)'
+					});
+				}
+			});
+		</script>
+		<script>
+			window.onload = function(){
+				//canvas init
+				var canvas = document.getElementById("canvas");
+				var ctx = canvas.getContext("2d");
+				
+				//canvas dimensions
+				var W = window.outerWidth;
+				var H = window.outerHeight;
+				canvas.width = W;
+				canvas.height = H;
+				
+				//snowflake particles
+				var mp = 30; //max particles
+				var particles = [];
+				for(var i = 0; i < mp; i++)
+				{
+					particles.push({
+						x: Math.random()*W, //x-coordinate
+						y: Math.random()*H, //y-coordinate
+						r: Math.random()*2+1, //radius
+						d: Math.random()*mp //density
+					})
+				}
+				
+				//Lets draw the flakes
+				function draw()
+				{
+					ctx.clearRect(0, 0, W, H);
+					
+					ctx.fillStyle = "rgba0, 0,0, 0.8)";
+					ctx.beginPath();
+					for(var i = 0; i < mp; i++)
+					{
+						var p = particles[i];
+						ctx.moveTo(p.x, p.y);
+						ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+					}
+					ctx.fill();
+					update();
+				}
+				
+				//Function to move the snowflakes
+				//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+				var angle = 0;
+				function update()
+				{
+					angle += 0.01;
+					for(var i = 0; i < mp; i++)
+					{
+						var p = particles[i];
+						//Updating X and Y coordinates
+						//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+						//Every particle has its own density which can be used to make the downward movement different for each flake
+						//Lets make it more random by adding in the radius
+						p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+						p.x += Math.sin(angle) * 2;
+						
+						//Sending flakes back from the top when it exits
+						//Lets make it a bit more organic and let flakes enter from the left and right also.
+						if(p.x > W+5 || p.x < -5 || p.y > H)
+						{
+							if(i%3 > 0) //66.67% of the flakes
+							{
+								particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
+							}
+							else
+							{
+								//If the flake is exitting from the right
+								if(Math.sin(angle) > 0)
+								{
+									//Enter from the left
+									particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
+								}
+								else
+								{
+									//Enter from the right
+									particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
+								}
+							}
+						}
+					}
+				}
+				
+				//animation loop
+				setInterval(draw, 33);
+			}
+
+
+
+
+
+
+		</script>
+	</body>
+</html>
