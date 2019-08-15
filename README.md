@@ -1,6 +1,4 @@
 # Personal-Website
-My Portfolio Website.
-
-Feel free to add changes.
+My old portfolio Website.
 
 Visit it at https://akaspanion.github.io/portfolio-website-old/
